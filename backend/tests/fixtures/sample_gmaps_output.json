@@ -1,0 +1,137 @@
+[
+  {
+    "input_id": "coffee-1",
+    "link": "https://maps.google.com/?cid=1111111111111111111",
+    "cid": "1111111111111111111",
+    "place_id": "ChIJ_coffee_place_001",
+    "title": "Sunrise Coffee Roasters",
+    "categories": ["Coffee shop", "Cafe"],
+    "category": "Coffee shop",
+    "address": "123 Pike St, Seattle, WA",
+    "latitude": 47.6132,
+    "longitude": -122.3202,
+    "review_count": 214,
+    "review_rating": 4.6,
+    "user_reviews_extended": [
+      {
+        "review_id": "r1",
+        "source": "google",
+        "rating_scale": 5,
+        "rating_float": 5.0,
+        "author_url": "https://www.google.com/maps/contrib/1",
+        "posted_at_unix_micros": 1700000000000000,
+        "language": "en",
+        "text_original": "Cozy little cafe with excellent pour-over and friendly baristas. My favorite spot to work in the mornings.",
+        "published_at": "2023-11-14T09:00:00Z",
+        "Name": "Alice Chen",
+        "Rating": 5,
+        "Description": "Cozy little cafe with excellent pour-over and friendly baristas. My favorite spot to work in the mornings.",
+        "When": "3 months ago"
+      },
+      {
+        "review_id": "r2",
+        "source": "google",
+        "rating_scale": 5,
+        "rating_float": 4.0,
+        "posted_at_unix_micros": 1698000000000000,
+        "language": "en",
+        "text_original": "Good espresso, a bit crowded on weekends but worth the wait. Great pastries too.",
+        "published_at": "2023-10-22T14:30:00Z",
+        "Name": "Marcus Lee",
+        "Rating": 4,
+        "Description": "Good espresso, a bit crowded on weekends but worth the wait. Great pastries too.",
+        "When": "4 months ago"
+      },
+      {
+        "review_id": "r3",
+        "source": "google",
+        "rating_scale": 5,
+        "rating_float": 5.0,
+        "posted_at_unix_micros": 1696000000000000,
+        "language": "en",
+        "text_original": "Quiet, quaint coffee shop with a relaxing atmosphere. Perfect for reading or studying.",
+        "published_at": "2023-09-29T08:15:00Z",
+        "Name": "Priya Patel",
+        "Rating": 5,
+        "Description": "Quiet, quaint coffee shop with a relaxing atmosphere. Perfect for reading or studying.",
+        "When": "5 months ago"
+      }
+    ]
+  },
+  {
+    "input_id": "steakhouse-1",
+    "link": "https://maps.google.com/?cid=2222222222222222222",
+    "cid": "2222222222222222222",
+    "place_id": "ChIJ_steakhouse_place_002",
+    "title": "The Copper Ember Steakhouse",
+    "categories": ["Steakhouse", "American restaurant"],
+    "category": "Steakhouse",
+    "address": "500 Broadway, Seattle, WA",
+    "latitude": 47.6205,
+    "longitude": -122.3212,
+    "review_count": 512,
+    "review_rating": 4.4,
+    "user_reviews_extended": [
+      {
+        "review_id": "r4",
+        "source": "google",
+        "rating_scale": 5,
+        "rating_float": 5.0,
+        "posted_at_unix_micros": 1699000000000000,
+        "language": "en",
+        "text_original": "Incredible ribeye, cooked perfectly. Loud, lively dining room with a great energy for a group dinner.",
+        "published_at": "2023-11-05T20:00:00Z",
+        "Name": "Jordan Kim",
+        "Rating": 5,
+        "Description": "Incredible ribeye, cooked perfectly. Loud, lively dining room with a great energy for a group dinner.",
+        "When": "3 months ago"
+      },
+      {
+        "review_id": "r5",
+        "source": "google",
+        "rating_scale": 5,
+        "rating_float": 4.0,
+        "posted_at_unix_micros": 1697000000000000,
+        "language": "en",
+        "text_original": "Solid steak, pricey but worth it for a special occasion. Service was attentive.",
+        "published_at": "2023-10-08T19:45:00Z",
+        "Name": "Taylor Reyes",
+        "Rating": 4,
+        "Description": "Solid steak, pricey but worth it for a special occasion. Service was attentive.",
+        "When": "4 months ago"
+      }
+    ]
+  },
+  {
+    "input_id": "ramen-1",
+    "link": "https://maps.google.com/?cid=3333333333333333333",
+    "cid": "3333333333333333333",
+    "place_id": "ChIJ_ramen_place_003",
+    "title": "Noodle & Broth Ramen House",
+    "categories": ["Ramen restaurant", "Japanese restaurant"],
+    "category": "Ramen restaurant",
+    "address": "88 Union St, Seattle, WA",
+    "latitude": 47.6091,
+    "longitude": -122.3352,
+    "review_count": 340,
+    "review_rating": 4.7,
+    "user_reviews": [
+      {
+        "Name": "Sam Osei",
+        "Rating": 5,
+        "Description": "Rich tonkotsu broth, chewy noodles. Small cozy shop, always a short wait but moves fast.",
+        "When": "2 months ago",
+        "ProfilePicture": "",
+        "Images": []
+      },
+      {
+        "Name": "Wei Zhang",
+        "Rating": 4,
+        "Description": "Great ramen, quiet spot, good for a solo lunch. Portions could be bigger.",
+        "When": "6 months ago",
+        "ProfilePicture": "",
+        "Images": []
+      }
+    ]
+  }
+]
