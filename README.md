@@ -25,7 +25,14 @@ see `backend/app/services/embeddings.py` and `user_vector.py`.
 
 ## Running it locally
 
-Two processes, no Docker required.
+Two processes, no Docker required. A `Makefile` at the repo root wraps the commands below —
+run `make help` to see all targets.
+
+```bash
+make install     # uv sync (backend) + npm install (frontend)
+make init-db      # create the SQLite schema (once)
+make dev          # run backend + frontend together; Ctrl-C stops both
+```
 
 ### Backend
 
@@ -35,6 +42,8 @@ uv sync
 uv run python scripts/init_db.py        # create the SQLite schema (once)
 uv run uvicorn app.main:app --reload --port 8001
 ```
+
+Or via make: `make backend-install`, `make init-db`, `make backend-dev`.
 
 Bind this to `127.0.0.1` only (the default) unless you have a specific reason not to — the
 frontend proxies all API calls through itself (see below), so the backend never needs to be
@@ -47,6 +56,8 @@ cd frontend
 npm install
 npm run dev
 ```
+
+Or via make: `make frontend-install`, `make frontend-dev`.
 
 The browser only ever talks to the frontend's own origin. `next.config.ts`'s `rewrites()` proxies
 `/api/*` server-side to `http://localhost:8001/api/*`, so there's one URL to reach and (if you set
@@ -94,6 +105,9 @@ uv run python scripts/run_scrape.py --query "coffee in Capitol Hill Seattle" --d
 uv run python scripts/build_embeddings.py
 ```
 
+Or via make (from the repo root): `make scrape QUERY="coffee in Capitol Hill Seattle" DEPTH=5`
+followed by `make embeddings`.
+
 Keep `--concurrency` low (default 1) and don't crank `--depth` way up — going slow avoids
 getting blocked, and there's no ToS/legal review behind this prototype so it's worth being
 conservative on your own.
@@ -104,5 +118,7 @@ conservative on your own.
 cd backend
 uv run pytest
 ```
+
+Or via make: `make test`.
 
 Tests use fixtures and synthetic vectors — no network access or model download required.
